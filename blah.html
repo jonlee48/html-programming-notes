@@ -1,0 +1,277 @@
+<!-- <!DOCTYPE html> -->
+<html>
+  <head>
+    <title>Jonathan's Programming Notes!</title>
+    <style>
+ <!-----Tabs------->
+body{width:100%;}
+.allTabs{margin-left:auto;
+    margin-top: 20px;
+    margin-right: auto;
+    text-align:center;}
+.tab {
+  display:inline-block;
+}
+.tab label {
+  background: white; 
+  padding: 10px; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;   
+}
+[type=radio]:checked ~ label {
+  background: white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+.link-tab a {
+      color: black;
+      font-family: Cuprum, Verdana, Arial, sans-serif;
+      font-size: 1.5em;
+      text-decoration: none;
+      border-bottom: 4px solid #DADEDE;
+      }
+.link-tab a:hover {
+      border-bottom: 4px solid blue;
+      }
+<!------Text and Content------->
+body {
+    margin: 4%;     
+}
+header{
+    height:100vh;
+    margin-bottom: -100px;
+}
+#wrapper{
+  margin-top: 0px;
+  text-align: left;
+}
+h1 {
+  background-image: url("http://gdurl.com/fany");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  max-width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DADEDE;
+  border-radius: 4px;
+	  font-family: Cuprum, Verdana, Arial, sans-serif;
+	  font-size: 4em;
+	  font-weight: 600;
+  text-align: center;
+  color: #0000FF;
+  line-height: 70px;
+}
+h2 {
+  border-radius: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Cuprum, Verdana, Arial, sans-serif;
+  font-size: 2em;
+	  font-weight: 600;
+  background-color: blue;
+  background-size: contain;
+  color: white;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+h3{
+  margin-top: 30px;
+  margin-bottom: -8px;
+  margin-left: 40px;
+  font-family: Cuprum, Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+	font-weight: 500;
+}
+.lesson{
+  background-color: #DADEDE;
+  background-size: cover;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.description{
+  font-family: Cuprum, Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+    </style>
+  </head>
+
+<!---start of HTML body--->
+  <body>
+    <header>
+      <p>
+        <h1><br>Programming Notes</h1>
+      </p>
+    </header>
+<!-----Lesson tabs--------->    
+    <div class="allTabs">
+      <div class="tab">
+        <input type="radio" id="tab-1" name="tab-group-1" checked>
+        <label for="tab-1"><span class="link-tab"><a href="#lesson-1">Lesson 1</a></span></label>
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab-2" name="tab-group-1">
+        <label for="tab-2"><span class = "link-tab"><a href="#lesson-2">Lesson 2</a></span></label>  
+      </div> 
+      <div class="tab">
+        <input type="radio" id="tab-3" name="tab-group-1">
+        <label for="tab-3"><span class = "link-tab"><a href="#lesson-3">Lesson 3</a></span></label>
+      </div> 
+  </div>
+  
+  
+ <!-------------LESSON 1--------------->
+    <div id="wrapper">  
+      <div class = lesson id = "lesson-1">
+        <p>
+          <h2>Lesson 1: The Basics of the Web and HTML</h2>
+        </p>
+      
+<!-----HOW THE WEB WORKS------>
+        <div>
+          <p>
+            <h3>How the Web Works</h3>
+          </p>
+          <div class = description>
+            <p>
+              The <b>World Wide Web</b> (WWW) is a bunch of computers that communicate with each other. When a person goes to a web page like www.google.com, their computer sends a <b>HTTP</b> (Hypertext Transfer Protocol)<b> Request </b> to a <b>server</b>. The server finds the appropriate HTML document and sends it back to the user's computer where a <b>web browser</b> (ex. Safari) interprets the page and displays it on the user's screen.
+            </p>
+          </div>  
+        </div>
+
+<!------------HTML------------>
+        <div>
+          <p>
+            <h3>HTML</h3>
+          </p>
+          <div class = description>
+            <p>
+              HTML stands for <b>Hypertext Markup Language.</b> It is a programming language that forms the majority of the content of the web. HTML documents contain <b>text content</b> which describes "what you see" and <b>markup</b> which describes "how it looks". <a href="https://www.youtube.com/watch?v=5Kjx-NOwcSc"> This video</a> gives a good overview. <a href="https://www.youtube.com/watch?v=VL7Wm0UzY6s">Here</a> is how HTML documents are structured.
+            </p>
+          </div>
+        </div>
+
+<!-----TAGS AND ELEMENTS------>
+        <div>
+          <p>
+            <h3>Tags and Elements</h3>
+          </p>
+          <div class = description>
+            <p>
+              HTML documents are made of HTML <b>elements</b>. Elements are the openning and closing tag and their content. The content can be text, other tags, and or attributes (values). This <a href="https://www.youtube.com/watch?v=VsxbuJWcxqA">video</a> explains it pretty well.
+              <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some HTML  Elements</b>
+              <!--Bold tag = [<b> Content </b>] -->
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>-Bold font&nbsp;</b><a href="https://www.youtube.com/watch?v=irJ9o1Uv6U8">Video</a>
+              <!--Italic tag = [<em> Content </em>] -->
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>-Italic font&nbsp;</em><a href="https://www.youtube.com/watch?v=4H23hC78J_A">Video</a>
+              <!--Insert picture = <[img src = "url" alt = "text displayed when picture doesn't show up"]> -->
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Insert picture<img src="http://gdurl.com/mafm" alt="logo"><a href="https://www.youtube.com/watch?v=Le8i8TtDleU">Video</a>
+              <!--Hyperlink = [<a href = "link"> Text displayed as hyperlink </a>] -->
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?t=79&v=-0S9lBFHeo0">-Anchor (Hyperlink)</a>
+              <!--Break void Tag = [<br>] -->
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Break...
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void tag&nbsp;<a  href="https://www.youtube.com/watch?v=dEtVii1eYYY">Video (Stop at 1:11)</a>
+              <!--Paragraph = [<p> Content </p>] -->
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Paragraph&nbsp;<a href="https://www.youtube.com/watch?v=dEtVii1eYYY">Video (Start from 1:13)</a>
+            </p>
+          </div>  
+        </div>
+
+<!----INLINE VS BLOCK ELEMENTS---->
+        <div>
+          <p>
+            <h3>Inline vs Block Elements</h3>
+          </p>
+          <div class = description>
+            <p>
+              HTML elements are either <b>inline</b> or <b>block</b>. Inline elements just become a line of text. Block elements form an "invisible box" around the content inside of them that doesn't necessarily fit into a line of text. Here is a <a href="https://www.youtube.com/watch?v=bOh9WjucNsA">video</a> that explains that.
+            </p>
+          </div>  
+        </div>
+      </div>
+
+
+
+<!------------LESSON 2------------>
+      <div class = lesson id = "lesson-2">
+        <p>
+          <h2>Lesson 2: Creating a Structured Document with HTML</h2>
+        </p>
+<!----THE BOX STRUCTURE OF HTML---->
+        <div>
+          <p>
+            <h3>The Box Structure of HTML</h3>
+          </p>
+          <div class = description>
+            <p>
+              In a HTML document, each HTML tag creates an element in the <b>DOM</b> (Document Object Model) that the browser uses to display the page. The elements are organized in a rectangular tree structure. The <a href="https://en.wikipedia.org/wiki/Tree_structure">"tree-like structure"</a> in HTML code comes from the fact that HTML elements can have other elements inside of them. In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on. 
+            </p>
+          </div>
+        </div>
+
+<!---------TEXT EDITORS---------->
+        <div>
+          <p>
+            <h3>Programming Text Editors</h3>
+          </p>
+          <div class = description>
+            <p>
+              When writing code, programmers use special text editors (like <a href="http://www.sublimetext.com/2">Sublime Text</a>, <a href = "https://codepen.io/">CodePen</a>, <a href = "http://jsfiddle.net/WW3bh/">HTML Playground</a>, and <a href = "http://scratchpad.io/thick-juice-1115">Scratchpad</a>). These editors make the programmer's life easier. Here is a <a href="https://www.youtube.com/watch?v=Wg8dtu2gbwQ&feature=youtu.be">video</a> of different text editors I used to create this website.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+
+
+<!------------LESSON 3-------------->
+      <div class = lesson id = "lesson-3">
+        <p>
+          <h2>Lesson 3: Adding CSS Style to HTML Structure</h2>
+        </p>
+
+<!------Avoiding Repetition-------->
+        <div>
+          <p>
+            <h3>Avoiding Repetition</h3>
+          </p>
+          <div class = description>
+            <p>
+              Avoiding repetition is is important for a variety of reasons...
+              <br>
+              <br>
+              <b>Errors:</b> Doing the same thing over and over everytime a code appears is tedious. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere the repeated code appears, problems will arise. 
+              <br>
+              <br>
+              <b>Consistency:</b> To make the webpage look nicer I had to be consistent with the styles. Instead of manually giving each code the same style, I was able to assign each lesson <b>div</b> the same <b>class</b> and then specify the style for that class in only one place! By avoiding repetion, it's now very easy for me to make changes to this style.
+            </p>
+          </div>  
+        </div>
+        
+<!-------------CSS-------------->    
+        <div>
+          <p>
+            <h3>CSS</h3>
+          </p>
+          <div class = description>
+            <p>
+              <b>CSS</b> stands for (Cascading Style Sheets) and is a coding language that controls the style of HTML elements. Programmers add CSS to change the looks of their webpage. This is done by giving similar HTML elements the same <b>class</b> name and then specifying the style that should apply to that class. This is a great <a href = "https://www.youtube.com/watch?v=oaitg9nRqvc">video</a> on how CSS works. Use <a href = "https://css-tricks.com/snippets/css/">this</a> and <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">this</a> to learn more about CSS.
+            </p>
+          </div>  
+        </div>
+      </div> 
+    </div> 
+  </body>
+</html>
