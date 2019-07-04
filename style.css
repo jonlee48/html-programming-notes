@@ -1,0 +1,101 @@
+body{width: 92%;}
+.allTabs{margin-left:auto;
+    margin-top: 20px;
+    margin-right: auto;
+    text-align:center;}
+.tab {
+  display:inline-block;
+}
+.tab label {
+  background: white; 
+  padding: 10px; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;   
+}
+[type=radio]:checked ~ label {
+  background: white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+.link-tab a {
+      color: black;
+      font-family: Cuprum, Verdana, Arial, sans-serif;
+      font-size: 1.5em;
+      text-decoration: none;
+      border-bottom: 4px solid #DADEDE;
+      }
+.link-tab a:hover {
+      border-bottom: 4px solid blue;
+      }
+
+body {
+    margin: 4%;     
+}
+header{
+    height:100vh;
+    margin-bottom: -100px;
+}
+#wrapper{
+  margin-top: 0px;
+  text-align: left;
+}
+h1 {
+  background-image: url("http://gdurl.com/fany");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  max-width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DADEDE;
+  border-radius: 4px;
+	  font-family: Cuprum, Verdana, Arial, sans-serif;
+	  font-size: 4em;
+	  font-weight: 600;
+  text-align: center;
+  color: #0000FF;
+  line-height: 70px;
+}
+h2 {
+  border-radius: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Cuprum, Verdana, Arial, sans-serif;
+  font-size: 2em;
+	  font-weight: 600;
+  background-color: blue;
+  background-size: contain;
+  color: white;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+h3{
+  margin-top: 30px;
+  margin-bottom: -8px;
+  margin-left: 40px;
+  font-family: Cuprum, Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+	font-weight: 500;
+}
+.lesson{
+  background-color: #DADEDE;
+  background-size: cover;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.description{
+  font-family: Cuprum, Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
